@@ -10,18 +10,39 @@ I would like to turn this into a full Web Based Application with Twitch API Inte
 
 # Initial Starting Points
 
--Remove paid JS codelets for search functionality and rewrite those functions to be native to reduce project costs.
+-Remove paid JS codelets for search Functionality and rewrite those functions to be native to reduce project costs.
 
 -Remove all references to the Webflow CMS and rewrite those references using the Database API currently being used for content management (Currently using Airtable, looking at cheaper options for that as well)
 
 -Remove the Webflow References for User Management and begin utilizing Twitch Authentication and/or Firebase Authentication
 
-# Paramaters of Webapp functionality
+# Intended Paramaters of Webapp Functionality
 
--Utilize Twitch.tv API for User Authentication, and Chat Interaction, Receive Commands from Twitch Chat (Potentially chatty API as well)
+    -General Requirements
 
--Allow twitch users to add items to a "Queue" based on Subscriber Status received through the Twitch API
+        -Must strictly remain a Web Based Application
+        -Have multiple Queues (Now Playing, Priority, General, Song Pool, Needs Screened)
+        -Drag and drop re-ordering between all queues for Admins/Moderators
+        -2 web interfaces and/or dashboards (Client View Only Side / Admin-Mod Edit Side)
+        -allow the streamer to see the youtube video embed
 
--Allow Moderators and Above to manage said queue, and re-order the items utilizing a drag/drop functionality
+    - Web Interface Requirements
+
+        -Twitch Login Authentication (Allow the Channel Owner to edit permissions and give people Admin/Mod Rights)
+        -Limit who can request songs by "Subsriber Level" (everyone, subscriber, VIP, Moderator, Owner)
+        -Request songs via Youtube Links
+        -Limit the number of active requests per user to a configurable number (Ideally customizable per access level)
+        -Allow Admins/Mods to disable/enable queues, and/or add/delete queues
+
+    - Chatbot Requirements
+
+        -Ability to Connect the Bot to the Owners Twitch Channel 
+        -Listen for commands in the Chat Channel
+        -Ability to Customize commands
+        -Post Feedback Messages when a command is recognized (Success/Fail)
+        -Allow the chatbot to take a direct youtube link, youtube short link, or vod ID, and Search String as well
+        -have !currentsong command post the current song playing in chat. 
+
+
 
 
