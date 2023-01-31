@@ -41,7 +41,9 @@ I would like to turn this into a full Web Based Application with Twitch API Inte
         -Ability to Customize commands
         -Post Feedback Messages when a command is recognized (Success/Fail)
         -Allow the chatbot to take a direct youtube link, youtube short link, or vod ID, and Search String as well
-        -have !currentsong command post the current song playing in chat. 
+        -Have !currentsong command post the current song playing in chat. 
+        -Allow the chatbot to automatically reject submissions based on length of song/video, and cross reference a pre-defined list of "Blacklist" items.
+         
 
 
 
